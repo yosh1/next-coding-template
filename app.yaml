@@ -1,0 +1,5 @@
+runtime: nodejs12
+entrypoint: next start -p $PORT
+handlers:
+- url: .*
+  script: auto
