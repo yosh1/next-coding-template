@@ -2,14 +2,16 @@
   "name": "next-coding-template",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
+    "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "rm -rf ./build && NODE_ENV=production next build",
+    "start": "next start",
+    "deploy": "yarn build && gcloud app deploy"
   },
   "dependencies": {
-    "next": "10.0.4",
+    "next": "10.0.3",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "sass": "^1.30.0"
   }
 }
