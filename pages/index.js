@@ -1,11 +1,15 @@
-import Head from 'next/head'
+import Meta from "../components/meta";
 import styles from "../styles/pages/index.module.scss";
 
 export default function Home() {
   return (
-    <div>
-        <Head />
+    <>
+      <Meta />
+      <body>
+        <header/>
         <main></main>
-    </div>
-  )
+        <footer/>
+      </body>
+    </>
+  );
 }
